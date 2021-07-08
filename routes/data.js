@@ -9,14 +9,15 @@ const mysql=require('mysql2');
 //     database: "simpleangular",
 //     multipleStatements: true
 // })
-const con = mysql.createConnection({
+const con = mysql.createPool({
     host: "us-cdbr-east-04.cleardb.com",
     user: "b91bdb2e20768c",
     password: "d3dc0491",
     database: "heroku_362893d7c4bf568",
     multipleStatements: true
 })
-con.connect(console.log("connecting to mysql"))
+	
+console.debug(console.log("connecting to mysql"))
 
 
 
