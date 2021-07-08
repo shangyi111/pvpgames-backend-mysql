@@ -15,7 +15,8 @@ const getPayload = (id,token,username,email) => {
 
 
 router.get('',(req,res,next)=>{
-    res.send(console.log(req))
+    console.log(req)
+    res.send({testing: 'ok'});
 })
   
 
